@@ -59,81 +59,81 @@ The following enterprise platforms provide commercial package hosting, private a
 
 Modern open-source package managers focus on solver speed, binary isolation, deterministic lockfiles, and cross-platform reproducibility.
 
-*Sorted descending by GitHub star count:*
+*Sorted descending by GitHub Stars_Count:*
 
-1. **[Bun](https://github.com/oven-sh/bun)** [![GitHub stars](https://img.shields.io/github/stars/oven-sh/bun?style=social&color=white)](https://github.com/oven-sh/bun/stargazers)  
+1. **[Bun](https://github.com/oven-sh/bun)** [![GitHub_Stars](https://img.shields.io/github/stars/oven-sh/bun?style=social&color=white)](https://github.com/oven-sh/bun/stargazers)  
    **Ultra-fast all-in-one JavaScript runtime, bundler, test runner, and package manager** — MIT licensed. Written in Zig, Bun replaces `npm`, `yarn`, and `pnpm` with 25–30x faster package installations via parallelized system calls, global disk caching, and a binary lockfile (`bun.lockb` / `bun.lock`).
 
-2. **[uv](https://github.com/astral-sh/uv)** [![GitHub stars](https://img.shields.io/github/stars/astral-sh/uv?style=social&color=white)](https://github.com/astral-sh/uv/stargazers)  
+2. **[uv](https://github.com/astral-sh/uv)** [![GitHub_Stars](https://img.shields.io/github/stars/astral-sh/uv?style=social&color=white)](https://github.com/astral-sh/uv/stargazers)  
    **Extremely fast Python package and project manager written in Rust** — MIT/Apache dual licensed. A single, unified binary drop-in replacement for `pip`, `pip-tools`, `poetry`, `pyenv`, `virtualenv`, and `twine`. Delivers 10–100x faster dependency resolution using PubGrub, cross-platform deterministic lockfiles (`uv.lock`), and zero-dependency Python interpreter installation (`uv python install`).
 
-3. **[Homebrew](https://github.com/Homebrew/brew)** [![GitHub stars](https://img.shields.io/github/stars/Homebrew/brew?style=social&color=white)](https://github.com/Homebrew/brew/stargazers)  
+3. **[Homebrew](https://github.com/Homebrew/brew)** [![GitHub_Stars](https://img.shields.io/github/stars/Homebrew/brew?style=social&color=white)](https://github.com/Homebrew/brew/stargazers)  
    **The missing package manager for macOS and Linux** — BSD-2-Clause licensed. Installs developer tools, command-line utilities, and desktop GUI applications (Homebrew Cask) into isolated user prefixes without requiring administrative `sudo` privileges.
 
-4. **[Yarn](https://github.com/yarnpkg/yarn)** [![GitHub stars](https://img.shields.io/github/stars/yarnpkg/yarn?style=social&color=white)](https://github.com/yarnpkg/yarn/stargazers)  
+4. **[Yarn](https://github.com/yarnpkg/yarn)** [![GitHub_Stars](https://img.shields.io/github/stars/yarnpkg/yarn?style=social&color=white)](https://github.com/yarnpkg/yarn/stargazers)  
    **Deterministic dependency management for Node.js** — BSD-2-Clause licensed. Pioneered deterministic lockfiles (`yarn.lock`), offline artifact caching, monorepo workspaces, and Plug'n'Play (PnP) zero-install architectures that eliminate `node_modules` overhead.
 
-5. **[pnpm](https://github.com/pnpm/pnpm)** [![GitHub stars](https://img.shields.io/github/stars/pnpm/pnpm?style=social&color=white)](https://github.com/pnpm/pnpm/stargazers)  
+5. **[pnpm](https://github.com/pnpm/pnpm)** [![GitHub_Stars](https://img.shields.io/github/stars/pnpm/pnpm?style=social&color=white)](https://github.com/pnpm/pnpm/stargazers)  
    **Fast, disk space-efficient package manager for JavaScript/TypeScript** — MIT licensed. Uses a content-addressable global hard-link store and symlinked virtual store structure to prevent phantom dependencies and save gigabytes of local disk storage.
 
-6. **[mise](https://github.com/jdx/mise)** [![GitHub stars](https://img.shields.io/github/stars/jdx/mise?style=social&color=white)](https://github.com/jdx/mise/stargazers)  
+6. **[mise](https://github.com/jdx/mise)** [![GitHub_Stars](https://img.shields.io/github/stars/jdx/mise?style=social&color=white)](https://github.com/jdx/mise/stargazers)  
    **Polyglot developer tool manager, environment variable manager, and task runner** — MIT licensed. Written in Rust (formerly `rtx`), it replaces `asdf`, `nvm`, `pyenv`, and `direnv` with instantaneous shell startups, shims, and declarative `.mise.toml` project profiles.
 
-7. **[Poetry](https://github.com/python-poetry/poetry)** [![GitHub stars](https://img.shields.io/github/stars/python-poetry/poetry?style=social&color=white)](https://github.com/python-poetry/poetry/stargazers)  
+7. **[Poetry](https://github.com/python-poetry/poetry)** [![GitHub_Stars](https://img.shields.io/github/stars/python-poetry/poetry?style=social&color=white)](https://github.com/python-poetry/poetry/stargazers)  
    **Comprehensive Python packaging and dependency management tool** — MIT licensed. Full-featured environment management using standard `pyproject.toml` (PEP 621), deterministic `poetry.lock` resolution, dependency groups (dev, docs, prod), and automated packaging and publishing to PyPI.
 
-8. **[Helm](https://github.com/helm/helm)** [![GitHub stars](https://img.shields.io/github/stars/helm/helm?style=social&color=white)](https://github.com/helm/helm/stargazers)  
+8. **[Helm](https://github.com/helm/helm)** [![GitHub_Stars](https://img.shields.io/github/stars/helm/helm?style=social&color=white)](https://github.com/helm/helm/stargazers)  
    **The dedicated package manager for Kubernetes** — Apache-2.0 licensed. Manages complex cloud-native application deployments using reusable, parameterized Charts with declarative releases, rollbacks, and registry distribution via OCI artifacts.
 
-9. **[vcpkg](https://github.com/microsoft/vcpkg)** [![GitHub stars](https://img.shields.io/github/stars/microsoft/vcpkg?style=social&color=white)](https://github.com/microsoft/vcpkg/stargazers)  
+9. **[vcpkg](https://github.com/microsoft/vcpkg)** [![GitHub_Stars](https://img.shields.io/github/stars/microsoft/vcpkg?style=social&color=white)](https://github.com/microsoft/vcpkg/stargazers)  
    **Cross-platform C and C++ library package manager** — MIT licensed by Microsoft. Manages native open-source and proprietary C/C++ libraries across Windows, Linux, and macOS with built-in integration for CMake, MSBuild, and private enterprise registries.
 
-10. **[winget-cli](https://github.com/microsoft/winget-cli)** [![GitHub stars](https://img.shields.io/github/stars/microsoft/winget-cli?style=social&color=white)](https://github.com/microsoft/winget-cli/stargazers)  
+10. **[winget-cli](https://github.com/microsoft/winget-cli)** [![GitHub_Stars](https://img.shields.io/github/stars/microsoft/winget-cli?style=social&color=white)](https://github.com/microsoft/winget-cli/stargazers)  
     **Windows Package Manager CLI** — MIT licensed by Microsoft. Official command-line package manager for Windows 10 and 11, automating discovery, installation, batch upgrades, and configuration of desktop and CLI applications from validated community manifests.
 
-11. **[asdf](https://github.com/asdf-vm/asdf)** [![GitHub stars](https://img.shields.io/github/stars/asdf-vm/asdf?style=social&color=white)](https://github.com/asdf-vm/asdf/stargazers)  
+11. **[asdf](https://github.com/asdf-vm/asdf)** [![GitHub_Stars](https://img.shields.io/github/stars/asdf-vm/asdf?style=social&color=white)](https://github.com/asdf-vm/asdf/stargazers)  
     **Extensible polyglot runtime version manager** — MIT licensed. Manages multiple runtime versions (Node.js, Python, Ruby, Elixir, Go, PHP) using a modular community plugin ecosystem and a unified `.tool-versions` configuration file.
 
-12. **[Pipenv](https://github.com/pypa/pipenv)** [![GitHub stars](https://img.shields.io/github/stars/pypa/pipenv?style=social&color=white)](https://github.com/pypa/pipenv/stargazers)  
+12. **[Pipenv](https://github.com/pypa/pipenv)** [![GitHub_Stars](https://img.shields.io/github/stars/pypa/pipenv?style=social&color=white)](https://github.com/pypa/pipenv/stargazers)  
     **Python development workflow tool by PyPA** — MIT licensed. Bridges `pip` and `virtualenv` into a single automated workflow using `Pipfile` and cryptographically hashed `Pipfile.lock` definitions.
 
-13. **[Nix](https://github.com/NixOS/nix)** [![GitHub stars](https://img.shields.io/github/stars/NixOS/nix?style=social&color=white)](https://github.com/NixOS/nix/stargazers)  
+13. **[Nix](https://github.com/NixOS/nix)** [![GitHub_Stars](https://img.shields.io/github/stars/NixOS/nix?style=social&color=white)](https://github.com/NixOS/nix/stargazers)  
     **Purely functional package manager and configuration system** — LGPL-2.1 licensed. Stores all packages immutably in `/nix/store` with cryptographic hashes, delivering true build reproducibility, atomic upgrades, zero-downtime rollbacks, and multi-version cohabitation.
 
-14. **[Cargo](https://github.com/rust-lang/cargo)** [![GitHub stars](https://img.shields.io/github/stars/rust-lang/cargo?style=social&color=white)](https://github.com/rust-lang/cargo/stargazers)  
+14. **[Cargo](https://github.com/rust-lang/cargo)** [![GitHub_Stars](https://img.shields.io/github/stars/rust-lang/cargo?style=social&color=white)](https://github.com/rust-lang/cargo/stargazers)  
     **The official Rust package manager and build orchestrator** — MIT/Apache dual licensed. Manages dependencies from crates.io, builds binaries and libraries, runs tests and benchmarks, and ensures reproducible builds with `Cargo.lock`.
 
-15. **[Chocolatey](https://github.com/chocolatey/choco)** [![GitHub stars](https://img.shields.io/github/stars/chocolatey/choco?style=social&color=white)](https://github.com/chocolatey/choco/stargazers)  
+15. **[Chocolatey](https://github.com/chocolatey/choco)** [![GitHub_Stars](https://img.shields.io/github/stars/chocolatey/choco?style=social&color=white)](https://github.com/chocolatey/choco/stargazers)  
     **The machine package manager for Windows** — Apache-2.0 licensed. Wraps native installers, executables, and zip archives into compiled NuGet packages for automated Windows application lifecycle management and enterprise fleet provisioning.
 
-16. **[pip](https://github.com/pypa/pip)** [![GitHub stars](https://img.shields.io/github/stars/pypa/pip?style=social&color=white)](https://github.com/pypa/pip/stargazers)  
+16. **[pip](https://github.com/pypa/pip)** [![GitHub_Stars](https://img.shields.io/github/stars/pypa/pip?style=social&color=white)](https://github.com/pypa/pip/stargazers)  
     **The official package installer for Python** — MIT licensed. The universal baseline for the Python ecosystem, installing pre-built wheels and source distributions from PyPI and custom package indexes.
 
-17. **[Conan](https://github.com/conan-io/conan)** [![GitHub stars](https://img.shields.io/github/stars/conan-io/conan?style=social&color=white)](https://github.com/conan-io/conan/stargazers)  
+17. **[Conan](https://github.com/conan-io/conan)** [![GitHub_Stars](https://img.shields.io/github/stars/conan-io/conan?style=social&color=white)](https://github.com/conan-io/conan/stargazers)  
     **Decentralized, open-source C and C++ package manager** — MIT licensed. Tailored for binary package generation across complex combinations of compilers (GCC, Clang, MSVC), architectures, operating systems, and build systems (CMake, Meson, Autotools).
 
-18. **[PDM](https://github.com/pdm-project/pdm)** [![GitHub stars](https://img.shields.io/github/stars/pdm-project/pdm?style=social&color=white)](https://github.com/pdm-project/pdm/stargazers)  
+18. **[PDM](https://github.com/pdm-project/pdm)** [![GitHub_Stars](https://img.shields.io/github/stars/pdm-project/pdm?style=social&color=white)](https://github.com/pdm-project/pdm/stargazers)  
     **Modern Python package manager with PEP 582 and PEP 621 compliance** — MIT licensed. Provides modular build backend support (flit-core, hatchling, setuptools, meson-python) alongside fast resolution and lockfile management.
 
-19. **[Mamba](https://github.com/mamba-org/mamba)** [![GitHub stars](https://img.shields.io/github/stars/mamba-org/mamba?style=social&color=white)](https://github.com/mamba-org/mamba/stargazers)  
+19. **[Mamba](https://github.com/mamba-org/mamba)** [![GitHub_Stars](https://img.shields.io/github/stars/mamba-org/mamba?style=social&color=white)](https://github.com/mamba-org/mamba/stargazers)  
     **High-performance C++ reimplementation of Conda** — BSD-3-Clause licensed. Features parallel multithreaded repository downloads and the state-of-the-art `libsolv` SAT solver for rapid dependency solving. Includes `micromamba`, a standalone, zero-dependency binary ideal for CI/CD containers.
 
-20. **[pip-tools](https://github.com/jazzband/pip-tools)** [![GitHub stars](https://img.shields.io/github/stars/jazzband/pip-tools?style=social&color=white)](https://github.com/jazzband/pip-tools/stargazers)  
+20. **[pip-tools](https://github.com/jazzband/pip-tools)** [![GitHub_Stars](https://img.shields.io/github/stars/jazzband/pip-tools?style=social&color=white)](https://github.com/jazzband/pip-tools/stargazers)  
     **Pinned dependency compiler and synchronizer for Python** — BSD-3-Clause licensed. Supplies `pip-compile` to generate pinned, hash-verified `requirements.txt` files and `pip-sync` to keep the active virtual environment strictly in sync.
 
-21. **[Pixi](https://github.com/prefix-dev/pixi)** [![GitHub stars](https://img.shields.io/github/stars/prefix-dev/pixi?style=social&color=white)](https://github.com/prefix-dev/pixi/stargazers)  
+21. **[Pixi](https://github.com/prefix-dev/pixi)** [![GitHub_Stars](https://img.shields.io/github/stars/prefix-dev/pixi?style=social&color=white)](https://github.com/prefix-dev/pixi/stargazers)  
     **Lockfile-first package and environment management system built on Rust** — BSD-3-Clause licensed. Leverages the extensive conda-forge ecosystem to manage multi-language dependencies (Python, R, C/C++, CUDA) with modern `pixi.lock` determinism and multi-environment workspaces.
 
-22. **[Conda](https://github.com/conda/conda)** [![GitHub stars](https://img.shields.io/github/stars/conda/conda?style=social&color=white)](https://github.com/conda/conda/stargazers)  
+22. **[Conda](https://github.com/conda/conda)** [![GitHub_Stars](https://img.shields.io/github/stars/conda/conda?style=social&color=white)](https://github.com/conda/conda/stargazers)  
     **Cross-platform binary package and environment manager** — BSD-3-Clause licensed. The foundational standard for scientific computing and machine learning, orchestrating complex native binary dependencies (CUDA, BLAS, LAPACK) across isolated environments.
 
-23. **[Hatch](https://github.com/pypa/hatch)** [![GitHub stars](https://img.shields.io/github/stars/pypa/hatch?style=social&color=white)](https://github.com/pypa/hatch/stargazers)  
+23. **[Hatch](https://github.com/pypa/hatch)** [![GitHub_Stars](https://img.shields.io/github/stars/pypa/hatch?style=social&color=white)](https://github.com/pypa/hatch/stargazers)  
     **Modern, extensible Python project and environment manager** — MIT licensed. Delivers matrix testing environments, PEP 621 project configuration, isolated build environments via `hatchling`, and automated package publishing.
 
-24. **[Spack](https://github.com/spack/spack)** [![GitHub stars](https://img.shields.io/github/stars/spack/spack?style=social&color=white)](https://github.com/spack/spack/stargazers)  
+24. **[Spack](https://github.com/spack/spack)** [![GitHub_Stars](https://img.shields.io/github/stars/spack/spack?style=social&color=white)](https://github.com/spack/spack/stargazers)  
     **Flexible package manager for High-Performance Computing (HPC)** — Apache-2.0 / MIT licensed. Designed for supercomputers and scientific clusters, enabling combinatorial installations of packages across multiple compiler versions, MPI implementations, and hardware architectures.
 
-25. **[virtualenv](https://github.com/pypa/virtualenv)** [![GitHub stars](https://img.shields.io/github/stars/pypa/virtualenv?style=social&color=white)](https://github.com/pypa/virtualenv/stargazers)  
+25. **[virtualenv](https://github.com/pypa/virtualenv)** [![GitHub_Stars](https://img.shields.io/github/stars/pypa/virtualenv?style=social&color=white)](https://github.com/pypa/virtualenv/stargazers)  
     **Dedicated Python environment isolation engine** — MIT licensed. The high-performance virtual environment generator that creates isolated execution trees with pre-seeded seed packages, running substantially faster than standard `venv`.
 
 ---
@@ -202,7 +202,7 @@ We welcome community contributions, benchmarks, and new tool additions!
 
 1. **Fork the repository** on GitHub.
 2. **Add or update an entry** in `README.md` following the existing format.
-3. **Include essential details**: name, official website/repo link, star count badge, licensing, and key capabilities.
+3. **Include essential details**: name, official website/repo link, Stars_Count badge, licensing, and key capabilities.
 4. **Submit a Pull Request** with a descriptive summary of your changes.
 
 ---
@@ -227,3 +227,12 @@ If this curated directory has saved you time, streamlined your dependency stack,
 
 - **License**: Released under the [MIT License](LICENSE).
 - **Curated Directory**: This list is maintained for informational and educational purposes. Package manager benchmarks, solver algorithms, and enterprise pricing models evolve rapidly. Verify current pricing, SLA terms, and feature sets with respective tool authors and SaaS providers before making architectural commitments.
+
+## Star History
+
+<a href="https://star-history.com/#ishandutta2007/Awesome-Package-Managers&Timeline" align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/ishandutta2007_Awesome-Package-Managers_growth.svg">
+    <img alt="Star History Chart" src="assets/ishandutta2007_Awesome-Package-Managers_growth.svg">
+  </picture>
+</a>
