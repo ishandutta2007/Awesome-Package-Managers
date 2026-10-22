@@ -1,0 +1,237 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="50%" stop-color="#0d1b2a" />
+      <stop offset="100%" stop-color="#050811" />
+    </linearGradient>
+
+    <!-- Glowing Text Gradient -->
+    <linearGradient id="title-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <!-- Accent Gradient -->
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+
+    <!-- Card Background Gradient -->
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.85" />
+    </linearGradient>
+
+    <!-- Subtle Grid Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="0.75" stroke-opacity="0.25" />
+      <circle cx="40" cy="0" r="1.5" fill="#38bdf8" fill-opacity="0.3" />
+    </pattern>
+
+    <!-- Blur Filter for Dynamic Glows -->
+    <filter id="glow-blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="60" />
+    </filter>
+
+    <filter id="pill-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <style>
+      /* CSS Keyframe Animations */
+      @keyframes pulse-slow {
+        0%, 100% { transform: scale(1) translate(0, 0); opacity: 0.35; }
+        50% { transform: scale(1.18) translate(20px, -15px); opacity: 0.65; }
+      }
+      @keyframes pulse-cyan {
+        0%, 100% { transform: scale(1) translate(0, 0); opacity: 0.3; }
+        50% { transform: scale(1.22) translate(-25px, 20px); opacity: 0.55; }
+      }
+      @keyframes float-dash {
+        0% { stroke-dashoffset: 0; }
+        100% { stroke-dashoffset: -120; }
+      }
+      @keyframes float-node {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-8px); }
+      }
+      @keyframes float-node-reverse {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(8px); }
+      }
+      @keyframes orbit-pulse {
+        0%, 100% { r: 4px; opacity: 0.6; }
+        50% { r: 6.5px; opacity: 1; }
+      }
+
+      .glow-purple {
+        transform-origin: 850px 150px;
+        animation: pulse-slow 9s ease-in-out infinite;
+      }
+      .glow-cyan {
+        transform-origin: 300px 250px;
+        animation: pulse-cyan 11s ease-in-out infinite;
+      }
+      .conn-line {
+        stroke-dasharray: 6, 8;
+        animation: float-dash 14s linear infinite;
+      }
+      .node-1 {
+        animation: float-node 5s ease-in-out infinite;
+      }
+      .node-2 {
+        animation: float-node-reverse 6s ease-in-out infinite;
+      }
+      .node-3 {
+        animation: float-node 7s ease-in-out infinite;
+      }
+      .node-pulse {
+        animation: orbit-pulse 3s ease-in-out infinite;
+      }
+
+      .badge-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+      }
+      .title-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-size: 52px;
+        font-weight: 800;
+        letter-spacing: -1px;
+      }
+      .subtitle-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        letter-spacing: 0.2px;
+      }
+      .tag-text {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+        font-size: 12px;
+        font-weight: 500;
+      }
+    </style>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1200" height="420" fill="url(#bg-grad)" rx="16" />
+  <rect width="1200" height="420" fill="url(#grid)" rx="16" />
+
+  <!-- Dynamic / Animated Glow Elements (Background Layer) -->
+  <g class="glow-cyan">
+    <circle cx="280" cy="220" r="160" fill="#0284c7" filter="url(#glow-blur)" />
+  </g>
+  <g class="glow-purple">
+    <circle cx="880" cy="180" r="180" fill="#7c3aed" filter="url(#glow-blur)" />
+  </g>
+  <g>
+    <circle cx="600" cy="210" r="130" fill="#0f766e" opacity="0.35" filter="url(#glow-blur)" />
+  </g>
+
+  <!-- Dynamic Animated Graph & Network Mesh (Behind text) -->
+  <g opacity="0.45">
+    <!-- Connecting dependency lines -->
+    <path class="conn-line" d="M 120 100 L 260 160 L 320 80 L 480 140" fill="none" stroke="#38bdf8" stroke-width="1.5" />
+    <path class="conn-line" d="M 720 80 L 860 140 L 980 90 L 1080 180" fill="none" stroke="#a855f7" stroke-width="1.5" />
+    <path class="conn-line" d="M 160 320 L 280 270 L 420 340 L 580 300" fill="none" stroke="#22d3ee" stroke-width="1.5" />
+    <path class="conn-line" d="M 640 330 L 780 280 L 920 340 L 1040 290" fill="none" stroke="#818cf8" stroke-width="1.5" />
+
+    <!-- Orbital nodes -->
+    <g class="node-1">
+      <circle cx="260" cy="160" r="4" fill="#38bdf8" class="node-pulse" />
+      <circle cx="260" cy="160" r="12" fill="none" stroke="#38bdf8" stroke-width="1" opacity="0.5" />
+      <circle cx="980" cy="90" r="4" fill="#c084fc" class="node-pulse" />
+      <circle cx="980" cy="90" r="12" fill="none" stroke="#c084fc" stroke-width="1" opacity="0.5" />
+    </g>
+    <g class="node-2">
+      <circle cx="320" cy="80" r="5" fill="#34d399" />
+      <circle cx="860" cy="140" r="5" fill="#818cf8" />
+      <circle cx="280" cy="270" r="4" fill="#38bdf8" />
+      <circle cx="920" cy="340" r="5" fill="#f472b6" />
+    </g>
+    <g class="node-3">
+      <circle cx="1080" cy="180" r="4.5" fill="#38bdf8" />
+      <circle cx="480" cy="140" r="4" fill="#818cf8" />
+      <circle cx="780" cy="280" r="4.5" fill="#34d399" />
+    </g>
+  </g>
+
+  <!-- Banner Border Stroke -->
+  <rect width="1198" height="418" x="1" y="1" fill="none" stroke="#334155" stroke-width="1.5" stroke-opacity="0.6" rx="16" />
+
+  <!-- ================= FOREGROUND CONTENT (ALWAYS CRISP & VISIBLE) ================= -->
+  <g id="foreground-content">
+    <!-- Top Pill / Badge -->
+    <g transform="translate(600, 68)">
+      <g transform="translate(-140, -18)">
+        <rect width="280" height="36" rx="18" fill="#1e293b" fill-opacity="0.85" stroke="#38bdf8" stroke-width="1.2" stroke-opacity="0.7" />
+        <circle cx="24" cy="18" r="5" fill="#22c55e" />
+        <circle cx="24" cy="18" r="9" fill="#22c55e" fill-opacity="0.25" />
+        <text x="42" y="23" fill="#e2e8f0" class="badge-text">CURATED ECOSYSTEM DIRECTORY</text>
+      </g>
+    </g>
+
+    <!-- Main Title -->
+    <g transform="translate(600, 155)">
+      <text text-anchor="middle" fill="url(#title-grad)" class="title-text" filter="drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.7))">
+        Awesome Package Managers
+      </text>
+    </g>
+
+    <!-- Subtitle -->
+    <g transform="translate(600, 202)">
+      <text text-anchor="middle" fill="#94a3b8" class="subtitle-text">
+        Cross-Platform Binary Management, Fast Solvers &amp; Reproducible Environments
+      </text>
+    </g>
+
+    <!-- Feature Cards / Tech Pills (Row of 4) -->
+    <g transform="translate(100, 252)">
+      <!-- Card 1: Fast Solvers -->
+      <g transform="translate(0, 0)">
+        <rect width="230" height="64" rx="12" fill="url(#card-grad)" stroke="#334155" stroke-width="1.2" />
+        <rect x="0" y="0" width="4" height="64" rx="2" fill="#38bdf8" />
+        <text x="20" y="28" fill="#38bdf8" class="tag-text">SOLVER ENGINES</text>
+        <text x="20" y="48" fill="#f1f5f9" class="badge-text">⚡ uv · Mamba · libsolv</text>
+      </g>
+
+      <!-- Card 2: Cross-Platform -->
+      <g transform="translate(255, 0)">
+        <rect width="230" height="64" rx="12" fill="url(#card-grad)" stroke="#334155" stroke-width="1.2" />
+        <rect x="0" y="0" width="4" height="64" rx="2" fill="#818cf8" />
+        <text x="20" y="28" fill="#818cf8" class="tag-text">BINARY ECOSYSTEMS</text>
+        <text x="20" y="48" fill="#f1f5f9" class="badge-text">📦 Conda · Pixi · Nix · vcpkg</text>
+      </g>
+
+      <!-- Card 3: Deterministic Lockfiles -->
+      <g transform="translate(510, 0)">
+        <rect width="230" height="64" rx="12" fill="url(#card-grad)" stroke="#334155" stroke-width="1.2" />
+        <rect x="0" y="0" width="4" height="64" rx="2" fill="#c084fc" />
+        <text x="20" y="28" fill="#c084fc" class="tag-text">REPRODUCIBILITY</text>
+        <text x="20" y="48" fill="#f1f5f9" class="badge-text">🔒 Poetry · PDM · Cargo · Bun</text>
+      </g>
+
+      <!-- Card 4: Enterprise Registries -->
+      <g transform="translate(765, 0)">
+        <rect width="235" height="64" rx="12" fill="url(#card-grad)" stroke="#334155" stroke-width="1.2" />
+        <rect x="0" y="0" width="4" height="64" rx="2" fill="#34d399" />
+        <text x="20" y="28" fill="#34d399" class="tag-text">ENTERPRISE SAAS</text>
+        <text x="20" y="48" fill="#f1f5f9" class="badge-text">☁️ JFrog · Cloudsmith · Nexus</text>
+      </g>
+    </g>
+
+    <!-- Bottom Stat Bar -->
+    <g transform="translate(600, 365)">
+      <text text-anchor="middle" fill="#64748b" class="tag-text">
+        25+ OPEN-SOURCE CATEGORY LEADERS  •  6 ENTERPRISE SAAS PLATFORMS  •  UPDATED FOR 2026
+      </text>
+    </g>
+  </g>
+</svg>
